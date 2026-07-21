@@ -5,18 +5,15 @@ This project is a personal portfolio website developed as part of the CMPG323 Pr
 
 The purpose of this project is to develop a comprehensive personal portfolio aimed at enhancing my post-graduation prospects.
 
-This portfolio will consist of several key components designed to showcase my skills, achievements, and professional identity.
-
 ---
 
 ## Features
-- Professional landing page
+- Landing page
 - About Me
 - Education
 - Skills
 - Projects
 - Work Experience
-- Certifications
 - Contact Information
 - Downloadable PDF CV
 - Responsive design for desktop and mobile devices
@@ -74,3 +71,4 @@ The website will be published using GitHub Pages.
 Third-Year BSc Information Technology Student
 
 ---
+
