@@ -64,11 +64,14 @@ nav{
 
 .hero{
 
+    max-width:1200px;
+    margin: 0 auto;
+    padding:80px 40px;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    padding:80px;
+    gap: 60px;
 
 }
 
@@ -140,4 +143,25 @@ nav{
 
     box-shadow:0 10px 25px rgba(0,0,0,.15);
 
+}
+
+/* About section */
+
+.about{
+     max-width: 900px;
+     margin:100px auto;
+     text-align:center;
+     padding:0 40px;
+}
+
+.about h2{
+    font-size:36px;
+    margin-bottom:30px;
+    color:#0A3D62;
+}
+
+.about p{
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:20px;
 }
