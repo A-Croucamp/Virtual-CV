@@ -2,23 +2,24 @@
 
 *{
     margin:0;
-    padding:0;
+    padding:0;   /* Reset default margin and padding */
     box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+    scroll-behavior:smooth; /* Smooth scrolling for anchor links */
 }
 
 body{
 
     font-family:Arial, Helvetica, sans-serif;
-    background:#F5F7FA;
+    background:#F5F7FA;     /* Light background color for the body */
     color:#2C3E50;
 
 }
 
 /* Navigation */
+/* Navigation bar styling */
 
 nav{
 
@@ -64,7 +65,20 @@ nav{
 
 }
 
-/* Hero */
+/*Mobile menu */
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    color:#0A3D62;
+}
+
+.nav-links a.current{
+    color:#3C91E6;
+}
+
+/* Hero Section */ 
+
 
 .hero{
 
@@ -555,7 +569,7 @@ nav{
 }
 
 .back-to-top{
-    display:inline-block;
+    display:none;
     padding:10px 20px;
     background:#3C91E6;
     color:white;
@@ -569,20 +583,42 @@ nav{
     transform:translateY(-5px);
 }
 
+/* Fade-in Animation */
+.fade{
+    opacity:0;
+    transform: translateY(40px);
+    transition: all .8s ease;
+}
+
+.fade.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Responsive Design */
-@media (max-width: 992px) 
+@media (max-width: 992px) /*Medium devices (tablets, 768px and up)*/
 {
     
     nav{
-        flex-direction:column;
+        flex-direction:row;
+        justify-content: space-between;
         padding:20px;
     }
 
+    .menu-toggle{
+        display: block;
+    }
+
     .nav-links{
-        margin-top:20px;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .nav-links.active{
+        display: flex;
     }
 
     /* Hero Section */
@@ -650,7 +686,7 @@ nav{
     }
 }
 
-@media (max-width: 600px) 
+@media (max-width: 600px) /*Extra small devices (phones, 600px and down)*/
 {
     .nav-links{
         gap:10px;
@@ -690,3 +726,5 @@ nav{
         max-width:400px;
     }
 }
+
+
