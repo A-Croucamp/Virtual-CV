@@ -216,4 +216,60 @@ nav{
     color: #2C3E50;
 }
 
+/* Skills section */
+.skills{
+    padding: 100px 40px;
+    background: #f5f7fa;
+}
+
+.skills h2{
+    text-align: center;
+    font-size: 36px;
+    color: #0A3D62;
+    margin-bottom: 50px;
+}
+
+.skills-container{
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.skill-item{
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover{
+    transform: translateY(-8px);
+}
+
+.skill-item h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #0A3D62;
+    text-align: center;
+}
+
+.skill-item ul{
+    list-style: none;
+    padding: 0;
+}
+
+.skill-item li{
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 14px;
+    background: #EAF2F8;
+    color: #0A3D62;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
 
