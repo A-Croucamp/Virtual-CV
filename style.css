@@ -76,9 +76,9 @@ nav{
     justify-content:space-between;
     align-items:center;
     gap: 60px;
-
 }
 
+    
 .hero-text{
 
     width:55%;
@@ -447,20 +447,6 @@ nav{
     font-size: 18px;
 }
 
-@media (max-width: 900px) 
-{
-    .contact-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) 
-{
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 .contact-container{
     max-width: 1000px;
     margin: 40px auto 0;
@@ -581,4 +567,126 @@ nav{
 .back-to-top:hover{
     background:#0A3D62;
     transform:translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) 
+{
+    
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .nav-links{
+        margin-top:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    /* Hero Section */
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:50px 30px;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
+    .hero-image{
+        margin-bottom:40px;
+    }
+
+    .hero-image img{
+        width:220px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    /* About Section */
+    .about{
+        padding:0 20px;
+    }
+
+    /* Education Section */
+    .education-container{
+        grid-template-columns:1fr;
+    }
+
+    /* Skills Section */
+    .skills-container{
+        grid-template-columns:1fr;
+    }
+
+    /* Work Experience Section */
+    .work-experience{
+        padding:70px 20px;
+    }
+
+    .timeline{
+        padding:0 20px;
+    }
+
+    /* Projects Section */
+    .projects-container{
+        grid-template-columns:1fr;
+    }
+
+    /* Contact Section */
+    .contact-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    /* Footer */
+    .footer-links{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+
+@media (max-width: 600px) 
+{
+    .nav-links{
+        gap:10px;
+    }
+
+    .nav-links a{
+        font-size:14px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero-text h1{
+        font-size:36px;
+    }
+
+    .hero-text h2{
+        font-size:22px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .hero-image img{
+        width:180px;
+    }
+
+    .education, .skills, .work-experience, .projects, .contact{
+        padding:50px 15px;
+    }
+
+    .contact-item{
+        width:100%;
+        max-width:400px;
+    }
 }
