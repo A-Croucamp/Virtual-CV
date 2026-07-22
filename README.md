@@ -67,6 +67,7 @@ The website will be published using GitHub Pages.
 ---
 ## Author
 Ashley Croucamp
+
 BSc Information Technology - Third Year Student
 ---
 
