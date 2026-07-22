@@ -1,5 +1,5 @@
 /* Reset */
-
+/* the * selector = apply these rules to every element */
 *{
     margin:0;
     padding:0;   /* Reset default margin and padding */
@@ -10,6 +10,7 @@ html{
     scroll-behavior:smooth; /* Smooth scrolling for anchor links */
 }
 
+/*Page Styling*/
 body{
 
     font-family:Arial, Helvetica, sans-serif;
@@ -36,11 +37,21 @@ nav{
 }
 
 .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-    font-size:24px;
-    font-weight:bold;
-    color:#0A3D62;
+.logo img{
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
 
+.logo span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0A3D62;
 }
 
 .nav-links{
@@ -77,10 +88,10 @@ nav{
     color:#3C91E6;
 }
 
-/* Hero Section */ 
+/* Main Section */ 
 
 
-.hero{
+.main{
 
     max-width:1200px;
     margin: 0 auto;
@@ -93,13 +104,13 @@ nav{
 }
 
     
-.hero-text{
+.main-text{
 
     width:55%;
 
 }
 
-.hero-text h1{
+.main-text h1{
 
     font-size:48px;
     margin-bottom:20px;
@@ -107,14 +118,14 @@ nav{
 
 }
 
-.hero-text h2{
+.main-text h2{
 
     font-size:26px;
     margin-bottom:20px;
 
 }
 
-.hero-text p{
+.main-text p{
 
     font-size:18px;
     line-height:1.6;
@@ -153,7 +164,7 @@ nav{
 
 }
 
-.hero-image img{
+.main-image img{
 
     width:320px;
 
@@ -167,8 +178,8 @@ nav{
 
 .about{
      max-width: 900px;
-     margin:100px auto;
-     text-align:center;
+     margin:100px auto; /*add space above and below section*/
+     text-align:center; /*centers horizontally*/
      padding:0 40px;
 }
 
@@ -200,8 +211,8 @@ nav{
 .education-container{
     max-width: 1000px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: grid; /*Keep all sections consistent*/
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /*each category is placed inside its own block*/
     gap: 30px;
 }
 
@@ -309,7 +320,7 @@ nav{
     position: relative;
 }
 
-.timeline::before{
+.timeline::before{  /*creates vertical line*/
     content: "";
     position: absolute;
     top: 0;
@@ -622,21 +633,21 @@ nav{
     }
 
     /* Hero Section */
-    .hero{
+    .main{
         flex-direction:column-reverse;
         text-align:center;
         padding:50px 30px;
     }
 
-    .hero-text{
+    .main-text{
         width:100%;
     }
 
-    .hero-image{
+    .main-image{
         margin-bottom:40px;
     }
 
-    .hero-image img{
+    .main-image img{
         width:220px;
     }
 
@@ -701,19 +712,19 @@ nav{
         align-items:center;
     }
 
-    .hero-text h1{
+    .main-text h1{
         font-size:36px;
     }
 
-    .hero-text h2{
+    .main-text h2{
         font-size:22px;
     }
 
-    .hero-text p{
+    .main-text p{
         font-size:16px;
     }
 
-    .hero-image img{
+    .main-image img{
         width:180px;
     }
 

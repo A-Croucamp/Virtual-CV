@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--Add title to the page-->
     <title>Ashley Croucamp | Virtual CV</title>
+
+    <!--Add a Favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -16,8 +19,12 @@
 <body>
 
     <!-- Navigation -->
+     <!--Create the navigation bar-->
     <nav>
-        <div class="logo">Ashley Croucamp</div>
+        <div class="logo">
+            <img src="images/logo.png" alt="Ashley Croucamp Logo"> <!--Add logo next to name-->
+            <span>Ashley Croucamp </span>
+        </div> 
 
         <div class="menu-toggle">
             ☰
@@ -27,50 +34,53 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#skills">Skills</a></li>                            <!--Link to the navigation-->
             <li><a href="#work-experience">Work Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <!-- Main Section -->
+     <!-- Home page -->
 
-        <div class="hero-text">
+    <section id="home" class="main"> <!--<section>Group related content-->
+
+        <div class="main-text">
 
             <h1>Hi, I'm Ashley Croucamp</h1>
 
-            <h2>Third-Year BSc Information Technology Student</h2>
+            <h2>Studying BSc Information Technology</h2>
 
             <p>
                 Passionate about software development, systems analysis,
-                and creating technology solutions that make a difference.
+                and information technologies.
             </p>
 
             <div class="buttons">
-                <a href="documents/CV-Croucamp_A.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+                <a href="documents/CV-Croucamp_A.pdf" class="btn btn-primary" target="_blank">Download CV</a> <!--<a>create links and buttons-->
                 <a href="#contact" class="btn btn-outline">Contact Me</a>
             </div>
 
         </div>
 
-        <div class="hero-image">
+        <div class="main-image">
 
-            <img src="images/profile.jpg" alt="Ashley Croucamp">
+            <img src="images/profile.jpg" alt="Ashley Croucamp"> <!--displays images-->
 
         </div>
 
-    </section>
+    </section> <!--Close the section-->
 
     <!-- About Me Section  -->
+     <!--Add About Me section to page-->
     <section id="about" class="about fade">
 
         <h2>About Me</h2>
         <p>
             I am a third-year BSc Information Technology student at North-West University with a strong interest in
             software
-            development, systems analysis, and database management.
+            development, systems analysis, and infromation technology.
         </p>
 
         <p>
@@ -90,7 +100,7 @@
     <section id="education" class="education fade">
         <h2>Education</h2>
 
-        <div class="education-container">
+        <div class="education-container"> <!--Use container to group content-->
             <div class="education-item">
                 <h3> Bachelor of Science in Information Technology </h3>
                 <h4>North-West University</h4>
@@ -121,13 +131,13 @@
     <section id="skills" class="skills fade">
         <h2>Skills</h2>
 
-        <div class="skills-container">
+        <div class="skills-container"> <!--Use container to group content-->
             <div class="skill-item">
                 <h3>Technical Skills</h3>
                 <ul>
                     <li>Software Development</li>
                     <li>UI Development</li>
-                    <li>Object-Oriented Programming</li>
+                    <li>Object-Oriented Programming</li> <!--group a set of related items in the lists-->
                     <li>System Analysis & Design</li>
                     <li>Database Management</li>
                     <li>Information Security</li>
@@ -150,7 +160,7 @@
 
     <!--Work Experience Section -->
     <section id="work-experience" class="work-experience fade">
-
+        <!--Vertical timeline-->
         <h2>Work Experience</h2>
         <div class="timeline">
             <div class="timeline-item">
@@ -198,6 +208,7 @@
         </div>
     </section>
 
+    <!--Projects Section-->
     <section id="projects" class="projects fade">
         <h2>Projects</h2>
         <div class="projects-container">
@@ -208,11 +219,11 @@
                     and JavaScript to create a responsive and visually appealing design.</p>
                 <div class="project-tags">
                     <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
+                    <span class="tag">CSS</span>    <!--visual tags-->
                     <span class="tag">JavaScript</span>
                     <span class="tag">GitHub</span>
                 </div>
-                <a href="https://github.com/A-Croucamp/Virtual-CV" class="project-btn" target="_blank">View Project </a>
+                <a href="https://github.com/A-Croucamp/Virtual-CV" class="project-btn" target="_blank">View Project </a> <!--Link to project-->
             </div>
 
             <div class="project-item">
@@ -229,7 +240,7 @@
                     <span class="tag">Team Project</span>
                 </div>
 
-                <a href="https://github.com/A-Croucamp/SkillTrackr" class="project-btn" target="_blank">View Project</a>
+                <a href="https://github.com/A-Croucamp/SkillTrackr" class="project-btn" target="_blank">View Project</a> <!--Link to project-->
             </div>
         </div>
     </section>
@@ -240,23 +251,23 @@
         <h2>Contact Me</h2>
         <p class="contact-text">
             Thank you for visiting my portfolio website. I am always eager to learn, collaborate, and explore new
-            opportunities in Information Technology. Feel free to get in touch.
+            opportunities. Certificates available upon request. 
         </p>
         <div class="contact-container">
             <div class="contact-item">
                 <i class="fas fa-envelope contact-icon"></i>
                 <h3>Email</h3>
-                <p><a href="mailto:croucampash@gmail.com">croucampash@gmail.com</a></p>
+                <p><a href="mailto:croucampash@gmail.com">croucampash@gmail.com</a></p> <!--Link to email-->
             </div>
             <div class="contact-item">
                 <i class="fab fa-github contact-icon"></i>
                 <h3>GitHub</h3>
-                <p><a href="https://github.com/A-Croucamp" target="_blank">A-Croucamp</a></p>
+                <p><a href="https://github.com/A-Croucamp" target="_blank">A-Croucamp</a></p> <!--Link to GitHub profile-->
             </div>
             <div class="contact-item">
                 <i class="fab fa-linkedin contact-icon"></i>
                 <h3>LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/ashley-croucamp-7ab90a423" target="_blank">Ashley Croucamp </a>
+                <p><a href="https://www.linkedin.com/in/ashley-croucamp-7ab90a423" target="_blank">Ashley Croucamp </a> <!--Link to Linedin profile-->
                 </p>
             </div>
         </div>
@@ -279,7 +290,7 @@
             <a href="#contact">Contact</a>
         </div>
 
-        <p>&copy; 2026 Ashley Croucamp • Built with HTML, CSS & JavaScript
+        <p>• Built with HTML, CSS & JavaScript
         </p>
 
         <a href="#home" class="back-to-top" id="topBtn">
