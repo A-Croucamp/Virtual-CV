@@ -65,7 +65,8 @@ The website will be published using GitHub Pages.
 *(To be added after deployment)*
 
 ---
-##Author
+## Author
 Ashley Croucamp
 BSc Information Technology - Third Year Student
+---
 
