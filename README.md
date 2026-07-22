@@ -50,9 +50,9 @@ virtual-cv/
 
 The objective of this project is to:
 
-- Develop a professional online portfolio.
+- Develop a professional Virtual CV.
 - Demonstrate web development skills using HTML, CSS, and JavaScript.
-- Present academic achievements, work experience, and technical skills.
+- Present academic projects, work experience, and technical skills.
 - Create an accessible and responsive website.
 - Host the portfolio using GitHub Pages.
 
@@ -65,10 +65,7 @@ The website will be published using GitHub Pages.
 *(To be added after deployment)*
 
 ---
-
-## Author
-**Ashley Croucamp**
-Third-Year BSc Information Technology Student
-
----
+##Author
+Ashley Croucamp
+BSc Information Technology - Third Year Student
 
