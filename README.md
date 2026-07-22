@@ -62,7 +62,7 @@ The objective of this project is to:
 
 The website will be published using GitHub Pages.
 **Portfolio URL:**
-*(To be added after deployment)*
+https://a-croucamp.github.io/Virtual-CV/
 
 ---
 ## Author
